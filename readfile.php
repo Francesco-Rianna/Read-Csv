@@ -9,7 +9,7 @@ require '/var/www/html/magento/app/bootstrap.php';
 $bootstrap = Bootstrap::create(BP, $_SERVER);
 $objectManager = $bootstrap->getObjectManager();
 $state = $objectManager->get('Magento\Framework\App\State');
-$state->setAreaCode('frontend'); // Set area di Magento
+$state->setAreaCode('adminhtml'); // Set area di Magento
 
 // carico la libreria PhpSpreadsheet
 require '/var/www/html/magento/vendor/autoload.php'; 
